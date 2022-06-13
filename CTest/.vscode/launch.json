@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug: File",
+      "type": "lldb",
+      "request": "launch",
+      "args": ["text1.txt", "text2.txt"],
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/build/${fileBasenameNoExtension}"
+    },
+    {
+      "name": "Debug: Project",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/build/${workspaceFolderBasename}"
+    }
+  ]
+}
