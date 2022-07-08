@@ -12,6 +12,7 @@
                 "${file}",
                 "-o",
                 "${workspaceFolder}/build/${fileBasenameNoExtension}",
+                "-Wpadded"
             ],
             "problemMatcher": [],
             "group": {

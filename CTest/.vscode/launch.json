@@ -5,7 +5,7 @@
       "name": "Debug: File",
       "type": "lldb",
       "request": "launch",
-      "args": ["text1.txt", "text2.txt"],
+      // "args": ["-c", "A"],
       "cwd": "${workspaceFolder}",
       "program": "${workspaceFolder}/build/${fileBasenameNoExtension}"
     },

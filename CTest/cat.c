@@ -20,8 +20,7 @@
 enum ERRORS {
     NO_RESULT_FILE_SPECIFIED,
     NO_CONCATENATED_FILES_SPECIFIED,
-    CONCATENATED_FILES_NOT_FOUND,
-    RESULT_FILE_WRONG_EXTENSION
+    CONCATENATED_FILES_NOT_FOUND
 };
 
 struct FILES {
@@ -50,6 +49,7 @@ void copy_file(FILE *f1, FILE *f2) {
         putc(c, f2);
 }
 
+// Возвращает сообщение переданной ошибки
 char *get_error(enum ERRORS error) {
     switch (error) {
     case NO_RESULT_FILE_SPECIFIED:
@@ -61,25 +61,25 @@ char *get_error(enum ERRORS error) {
     }
 }
 
-bool check_extension(char *file) {
-    // !!!
-}
-
-// !!!
+// Возвращает указатель на результирующий файл
+// Если файл не найден, возвращает NULL
 FILE *get_result_file(int argc, char *argv[]) {
     for (int i = 0; i < argc; i++) {
         if (
             strcmp(argv[i], FLAG_RESULT_FILE) == 0 
             && ++i < argc
-            && arv) {
+        ) {
             return fopen(argv[++i], "r");
         }
     }
-
     ERROR(get_error(NO_RESULT_FILE_SPECIFIED));
     return NULL;
 }
 
+// Возвращает указатель на массив файлов для конкатенации
 FILE **get_concatenated_files(int argc, char *argv[]) {
-
+    int files_count;
+    for (files_count = 0; files_count < argc; files_count++) {
+        if (!strcmp(const char *__s1, const char *__s2))
+    }
 }
