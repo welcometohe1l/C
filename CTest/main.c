@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
     struct tm time;
     printf("%d", time.tm_hour);
 }
-    
+
 // Implementations
 int sum(int a, ...) {
     va_list list; 
@@ -38,7 +38,7 @@ int sum(int a, ...) {
 
     while((value = va_arg(list, int)) != 0)
         result += value;
-
+    
     va_end(list);
     return result;
 }
