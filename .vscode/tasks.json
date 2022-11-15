@@ -16,8 +16,7 @@
                 "-D_FORTIFY_SOURCE=2",
                 "${file}",
                 "-o",
-                "${workspaceFolder}/build/${fileBasenameNoExtension}",
-                "-Wpadded"
+                "${workspaceFolder}/build/${fileBasenameNoExtension}"
             ],
             "dependsOrder": "sequence",
             "dependsOn": [
