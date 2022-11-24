@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "string": "c",
+        "iosfwd": "c",
+        "inttypes.h": "c",
+        "stdint.h": "c",
+        "wchar.h": "c",
+        "stdlib.h": "c",
+        "iconv.h": "c",
+        "system_error": "c"
+    }
+}
