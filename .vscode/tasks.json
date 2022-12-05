@@ -76,7 +76,7 @@
                 "xargs",
                 "-0",
                 "clang",
-                "-std=c11",
+                "-std=c17",
                 "-g",
                 "-o",
                 "${workspaceFolder}/build/${workspaceFolderBasename}"

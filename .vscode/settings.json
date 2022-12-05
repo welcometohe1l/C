@@ -16,6 +16,10 @@
         "__locale": "c",
         "ios": "c",
         "random": "c",
-        "cstdlib": "c"
+        "cstdlib": "c",
+        "9-01.h": "c",
+        "math.h": "c",
+        "complex": "c",
+        "cmath": "c"
     }
 }
