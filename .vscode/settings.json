@@ -20,6 +20,7 @@
         "9-01.h": "c",
         "math.h": "c",
         "complex": "c",
-        "cmath": "c"
+        "cmath": "c",
+        "stdbool.h": "c"
     }
 }
