@@ -7,6 +7,15 @@
         "wchar.h": "c",
         "stdlib.h": "c",
         "iconv.h": "c",
-        "system_error": "c"
+        "system_error": "c",
+        "aio.h": "c",
+        "fcntl.h": "c",
+        "locale": "c",
+        "stdio.h": "c",
+        "stat.h": "c",
+        "__locale": "c",
+        "ios": "c",
+        "random": "c",
+        "cstdlib": "c"
     }
 }
