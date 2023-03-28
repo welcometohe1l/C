@@ -10,14 +10,14 @@
             "args": [
                 "-g3",
                 "-std=c17",
+                "-Wpadded",
                 "-Wextra",
                 // "-Werror",
                 "-pedantic",
                 "-D_FORTIFY_SOURCE=2",
                 "${file}",
                 "-o",
-                "${workspaceFolder}/build/${fileBasenameNoExtension}",
-                "-Wpadded"
+                "${workspaceFolder}/build/${fileBasenameNoExtension}"
             ],
             "dependsOrder": "sequence",
             "dependsOn": [
@@ -77,6 +77,7 @@
                 "xargs",
                 "-0",
                 "clang",
+                "-std=c17",
                 "-g",
                 "-o",
                 "${workspaceFolder}/build/${workspaceFolderBasename}"
