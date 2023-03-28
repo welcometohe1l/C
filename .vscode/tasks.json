@@ -8,11 +8,50 @@
             "type": "shell",
             "command": "clang",
             "args": [
-                "-g",
+                "-g3",
+                "-std=c17",
+                "-Wextra",
+                // "-Werror",
+                "-pedantic",
+                "-D_FORTIFY_SOURCE=2",
                 "${file}",
                 "-o",
                 "${workspaceFolder}/build/${fileBasenameNoExtension}",
                 "-Wpadded"
+            ],
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Task: Remove build directory",
+                "Task: Create build directory"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Task: Build program",
+            "type": "shell",
+            "command": "find",
+            "args": [
+                "${fileDirname}",
+                "-name",
+                "\"*.c\"",
+                "-print0",
+                "|",
+                "xargs",
+                "-0",
+                "clang",
+                "-g3",
+                "-std=c17",
+                "-Wpadded",
+                "-Wextra",
+                "-Werror",
+                "-pedantic",
+                "-D_FORTIFY_SOURCE=2",
+                "-o",
+                "${workspaceFolder}/build/${workspaceFolderBasename}"
             ],
             "dependsOrder": "sequence",
             "dependsOn": [
